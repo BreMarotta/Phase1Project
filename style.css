@@ -1,3 +1,9 @@
 body {
     background: teal;
 }
+img {
+    background: whitesmoke;
+    box-shadow: 10px 10px black;
+    width: 300px;
+    height:auto;
+}
