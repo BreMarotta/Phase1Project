@@ -1,9 +1,36 @@
+h1 {
+    object-position: center;
+    font-size: 65px;
+    font-family: Helvetica;
+    font-weight: bolder;
+    text-align: center;
+}
+button {
+    border-radius: 15%;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:Sans-serif;
+    padding: 8px 5px;
+    background: rgb(0, 113, 128);
+}
 body {
-    background: teal;
+    background: rgb(106, 159, 172);
+    
 }
 img {
     background: whitesmoke;
     box-shadow: 10px 10px black;
-    width: 300px;
+    width: 250px;
     height:auto;
+}
+.logo {
+    background: teal;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px;
+}
+.card {
+    padding-bottom: 100px;
 }
