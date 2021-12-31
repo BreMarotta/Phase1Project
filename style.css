@@ -4,12 +4,23 @@ h1 {
     font-weight: bolder;
     text-align: center;
 }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 form { /*Form to add a Funko Pop to Collection */
     border: 5px solid black;
     background: whitesmoke;
     font-size: medium;
     box-shadow: 10px 10px;
     float:right;
+}
+label {
+    align-content: left;
+}
+input {
+    width: 80%;
+    align-content: center;
 }
 button { /*button to add new Funko Pop*/
     text-align: center;

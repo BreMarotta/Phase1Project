@@ -17,42 +17,46 @@
         <img class="fandomPics" id="Lord of the Rings"src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Tloftr-logo.svg/1280px-Tloftr-logo.svg.png" alt="Lord of the Rings">
     </p>
     <a>
-        <h1>
+        <h1 class="container">
         <form action="/my-adding-funko-pop-form" method ="post">
-            <ul><!---Form for adding new Funko Pops-->
-                <p>
-                    <label for="name">Name:</label>
+            <div><!---Form for adding new Funko Pops-->
+                <p> <!---funkoPopName-->
+                    <label for="funkoPopName">Name:</label>
                     <input type="text" id="name" name="funko_pop_name">
                 </p>
-                <p>
-                    <label for="select-fandom">Select Fandom:</label> <!---DropDown for Fandom Selection-->
+                <p><!---DropDown for Fandom Selection-->
+                    <label for="select-fandom">Select Fandom:</label> 
                     <select id="fandom-dropdown" name="select-fandom">
                         <default></default>
-                        <option value ="a">Marvel</option>
-                        <option value ="b">Star Wars</option>
-                        <option value ="c">The Office</option>
-                        <option value ="d">Lego</option>
-                        <option value ="e">Teenage Mutant Ninja Turtles</option>
-                        <option value ="f">The Hunger Games</option>
-                        <option value ="g">Harry Potter</option>
-                        <option value ="h">Disney</option>
-                        <option value ="i">The Lord of the Rings</option>
+                        <option value ="marvel">Marvel</option>
+                        <option value ="starWars">Star Wars</option>
+                        <option value ="theOffice">The Office</option>
+                        <option value ="lego">Lego</option>
+                        <option value ="tmnt">Teenage Mutant Ninja Turtles</option>
+                        <option value ="theHungerGames">The Hunger Games</option>
+                        <option value ="harryPotter">Harry Potter</option>
+                        <option value ="disney">Disney</option>
+                        <option value ="lotr">The Lord of the Rings</option>
                         </select>
                         </div>
                     </div>
                 </p>
-                <p>
+                <p> <!---funkoPopImage-->
                     <label for="img">Image</label>
                     <input type="text" id="picture" name="funko_pop_picture">
                 </p>
-                <p>
+                <p> <!---from input-->
                     <label for="giver">From:</label>
                     <input type="text" id="giver" name="funko_pop_from">
+                </p>
+                <p>
+                    <label for="personalMessage">Message:</label>
+                    <textarea name="message" rows="5" cols="25"></textarea>
                 </p>
                 <p class="button">
                     <button type="submit">Add New Funko Pop</button>
                 </p>
-            </ul>
+            </div>
         </form>
     </a>
 
