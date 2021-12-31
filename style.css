@@ -42,3 +42,12 @@ p {
 .card {
     padding-bottom: 100px;
 }
+form {
+    background: whitesmoke;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: medium;
+    height: 200px;
+    width: auto;
+
+}
