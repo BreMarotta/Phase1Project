@@ -8,15 +8,20 @@ h2{
     font-family: Helvetica;
     font-weight: bolder;
     font-size: 35px;
-    line-height:0px;
+    line-height:0.25rem;
 }
 h4{
     font-family: Helvetica;
     font-weight: bold;
     font-size: 30px;
-    line-height: 1px;
-    line-gap-override:inherit;
+    line-height: .25;
 }
+h5{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -57,6 +62,7 @@ img { /*Pictures for Collection Cards */
     background: white;
     width: auto;
     height:250px;
+    justify-self: center;
 }
 
 
