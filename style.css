@@ -7,13 +7,13 @@ h1 {
 h2{
     font-family: Helvetica;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 25px;
     line-height:0.25rem;
 }
 h4{
     font-family: Helvetica;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     line-height: .25;
 }
 h5{
@@ -79,7 +79,9 @@ p.card {
     padding: 1rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px black
+    box-shadow: 3px 4px black;
+    width: 250px;
+    height: 385px;
 }
 .fandomPics { /* Fandom Logos at the top of the page. Also buttons*/
     height: 50px;
