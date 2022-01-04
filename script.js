@@ -23,9 +23,26 @@ function createPopCard(pop){
         `
     document.querySelector('#funko-pop-collection').appendChild(card)
 
-}
-//placeholder functions before I add Fetch and more functionality
+    const btns =document.getElementsByClassName("fandomPics");
+    for(const btn of btns){
+        btn.addEventListener("click", (e) => {
+            let selected = e.target.id;
+            console.log(selected)
+            console.log(pop.fandom)
+        })
+    }
 
+        // let popsList = document.getElementsByClassName('card.h4')
+        // console.log(popsList)
+        // for(const pop of popsList){
+        //     console.log(pop.fandom)
+        // }
+    
+    
+    }
+
+// }
+//Function to add new Funko Pop to the collect (posts to db.json and creates new card)
 function addNew(e){
     e.preventDefault()
     fetch(`http://localhost:3000/funkoPops`, {
@@ -45,19 +62,19 @@ function addNew(e){
     .then(newPop => createPopCard(newPop))
     document.querySelector('form').reset();
 }
+
+//Function to sort and view Pops from a single fandom
+
+
+
 function resetCollection(){
     alert("When user clicks this button, collection should reset, showing all cards")
 }
 
-function sortPops(){
-    console.log(`Need to display all pops in ${this.id} fandom`)
-}
+
 
 //Fandom Buttons: will eventually use these to sort collection by fandom!
-const btns =document.getElementsByClassName("fandomPics");
-    for(const btn of btns){
-        btn.addEventListener("click", sortPops)
-    }
+
 //Reset Button: Will reset collection to include all cards
 const resetButton =document.querySelector("img.logo").addEventListener("click", resetCollection)
 
