@@ -29,6 +29,8 @@ function createPopCard(pop){
             let selected = e.target.id;
             console.log(selected)
             console.log(pop.fandom)
+            let filteredPops = Object.keys(pop.fandom).filter(pop => pop.fandom == selected)
+            console.log(filteredPops)
         })
     }
 
