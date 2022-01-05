@@ -22,6 +22,12 @@ function createPopCard(pop){
         <h5>From: ${pop.from} <br>${pop.occasion}</h5>
         `
     document.querySelector('#funko-pop-collection').appendChild(card)
+    card.addEventListener("mouseenter", (e) => {
+        e.target.children[3].style.visibility = "visible"; 
+    })
+    card.addEventListener("mouseleave", (e) => {
+        e.target.children[3].style.visibility = "hidden";
+    })
 }
 
 
@@ -48,7 +54,14 @@ function addNew(e){
     .then(newPop => createPopCard(newPop))
     document.querySelector('form').reset();
 }
-const allPops = document.getElementsByClassName('card') 
+const allPops = document.getElementsByClassName('card');
+
+
+
+//console.log(displayCards)
+function foo(){
+    console.log("got to function")
+}
 
 
 //WORKS!!!Attempting to create function to only display filtered cards for each fandom
