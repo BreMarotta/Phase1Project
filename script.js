@@ -23,26 +23,19 @@ function createPopCard(pop){
         `
     document.querySelector('#funko-pop-collection').appendChild(card)
 }
-
-//Attempting to create function to only display filtered cards for each fandom
+const allPops = document.getElementsByClassName('card') 
+console.log(allPops)
+//WORKS!!!Attempting to create function to only display filtered cards for each fandom
 const btns =document.getElementsByClassName("fandomPics");
 for(const btn of btns){
     btn.addEventListener("click", (e) => {
-        let selected = e.target.id;
-        //console.log(selected)
-        let allPops = document.getElementsByClassName('card') 
-        //console.log(allPops)
         for(const card of allPops){
-            let fandom =card.children[1].innerText;
-            //console.log(fandom)
-            if(selected !== fandom){
-                console.log(card)
-                card.hidden= true;
-                //card.hidden = true;
-            } else{
-                console.log("This should not be hidden", fandom)
-            }
-        }
+            card.style.display= "inline-grid";
+             let fandom =card.children[1].innerText;
+            if(e.target.id !== fandom){
+                card.style.display= "none";
+            } 
+        } 
     })
 }
     
