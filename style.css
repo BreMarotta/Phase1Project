@@ -19,35 +19,32 @@ h3{
 h4{
     font-family: Helvetica;
     font-size: 10px;
+    font-weight:lighter;
     visibility: hidden;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
 }
 form { /*Form to add a Funko Pop to Collection */
     border: 5px solid black;
     background: whitesmoke;
     font-size: small;
     box-shadow: 5px 5px;
-    float:right;
+    width: 500px;
+    display:none;
 }
-label {
-    align-content: left;
+select, label, input {
+    width: 350px;
 }
-input {
-    width: 80%;
-    align-content: center;
-}
-button { /*button to add new Funko Pop*/
+
+button, btn { /*buttons to submit form and add new*/
     text-align: center;
     font-size: 18px;
     font-weight: 700;
     font-family:Sans-serif;
     padding: 8px 5px;
     background: rgb(0, 113, 128);
+    border: grey solid 1px;
+    box-shadow: 3px 4px black;
 }
+
 .logo { /*Funko Pop Logo. Also Reset Collection Button */
     width: 500px;
     height: auto;
