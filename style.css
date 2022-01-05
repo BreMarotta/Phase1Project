@@ -10,16 +10,16 @@ h2{
     font-size: 25px;
     height:0px;
 }
-h4{
+h3{
     font-family: Helvetica;
     font-weight: bold;
     font-size: 20px;
     height: 0px;
 }
-h5{
+h4{
     font-family: Helvetica;
     font-size: 10px;
-    display: none;
+    visibility: hidden;
 }
 
 .container {

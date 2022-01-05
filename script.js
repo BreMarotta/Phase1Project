@@ -11,15 +11,15 @@ function init(){
 }
 
 //Functions:
-// Function to create card
+// Function to create card and add eventListeners to play hide and seek with from and occasion info
 function createPopCard(pop){
     let card =document.createElement('p')
     card.className = "card"
     card.innerHTML = `
         <h2>${pop.name}</h2>
-        <h4><span>${pop.fandom}</h4>
+        <h3><span>${pop.fandom}</h3>
         <img src="${pop.image}" class="img"/>
-        <h5>From: ${pop.from} <br>${pop.occasion}</h5>
+        <h4>From:   ${pop.from} <br>${pop.occasion}</h4>
         `
     document.querySelector('#funko-pop-collection').appendChild(card)
     card.addEventListener("mouseenter", (e) => {
