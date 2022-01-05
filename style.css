@@ -23,7 +23,7 @@ h4{
     visibility: hidden;
 }
 form { /*Form to add a Funko Pop to Collection */
-    border: 5px solid black;
+    border: grey solid 2px;
     background: whitesmoke;
     font-size: small;
     box-shadow: 5px 5px;
@@ -36,16 +36,18 @@ select, label, input {
 
 button, btn { /*buttons to submit form and add new*/
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight:lighter;
     font-family:Sans-serif;
+    color: whitesmoke;
     padding: 8px 5px;
-    background: rgb(0, 113, 128);
+    background: rgb(19, 37, 39);
     border: grey solid 1px;
-    box-shadow: 3px 4px black;
+    box-shadow: 2px 2px black;
 }
 
 .logo { /*Funko Pop Logo. Also Reset Collection Button */
+    border: grey solid 2px;
     width: 500px;
     height: auto;
     margin: auto;
@@ -70,7 +72,7 @@ p {
 p.card {
     background: whitesmoke;
     text-align: center;
-    border: grey solid 3px;
+    border: grey solid 2px;
     padding: .5rem;
     display: inline-grid;
     margin: .5rem .5rem;
@@ -79,8 +81,10 @@ p.card {
     height: 385px;
 }
 .fandomPics { /* Fandom Logos at the top of the page. Also buttons*/
+    border: grey solid 2px;
     height: 50px;
     width: auto;
     margin: 5px;
     box-shadow: 2px 2px;
+    background: white;
 }
