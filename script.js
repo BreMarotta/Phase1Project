@@ -22,28 +22,37 @@ function createPopCard(pop){
         <h5>From: ${pop.from}</h5>
         `
     document.querySelector('#funko-pop-collection').appendChild(card)
+}
 
-    const btns =document.getElementsByClassName("fandomPics");
-    for(const btn of btns){
-        btn.addEventListener("click", (e) => {
-            let selected = e.target.id;
-            console.log(selected)
-            console.log(pop.fandom)
-            let filteredPops = Object.keys(pop.fandom).filter(pop => pop.fandom == selected)
-            console.log(filteredPops)
-        })
-    }
-
-        // let popsList = document.getElementsByClassName('card.h4')
-        // console.log(popsList)
-        // for(const pop of popsList){
-        //     console.log(pop.fandom)
-        // }
+//Attempting to create function to only display filtered cards for each fandom
+const btns =document.getElementsByClassName("fandomPics");
+for(const btn of btns){
+    btn.addEventListener("click", (e) => {
+        let selected = e.target.id;
+        //console.log(selected)
+        let allPops = document.getElementsByClassName('card') 
+        //console.log(allPops)
+        for(const card of allPops){
+            let fandom =card.children[1].innerText;
+            //console.log(fandom)
+            if(selected !== fandom){
+                console.log(card)
+                card.hidden= true;
+                //card.hidden = true;
+            } else{
+                console.log("This should not be hidden", card)
+            }
+        }
+    })
+}
     
-    
+    function foo(e){
+        console.log("Got to function", e.target)
+        let popsList = document.getElementsByClassName('#funko-pop-collection')
+            console.log(popsList)
     }
-
-// }
+//WORKS Submits form to add new Funko Pop to collection
+const formSubmit =document.querySelector("button").addEventListener("click", addNew)
 //Function to add new Funko Pop to the collect (posts to db.json and creates new card)
 function addNew(e){
     e.preventDefault()
@@ -80,8 +89,7 @@ function resetCollection(){
 //Reset Button: Will reset collection to include all cards
 const resetButton =document.querySelector("img.logo").addEventListener("click", resetCollection)
 
-//Should open form to add new Funko Pop to collection
-const formSubmit =document.querySelector("button").addEventListener("click", addNew)
+
 
 // //const cards =document.querySelectorAll("img.card")
 //     for(const card of cards){

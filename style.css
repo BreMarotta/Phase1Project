@@ -8,13 +8,13 @@ h2{
     font-family: Helvetica;
     font-weight: bolder;
     font-size: 25px;
-    line-height:0.25rem;
+    height:0px;
 }
 h4{
     font-family: Helvetica;
     font-weight: bold;
     font-size: 20px;
-    line-height: .25;
+    height: 0px;
 }
 h5{
     font-family: Helvetica;
@@ -88,4 +88,7 @@ p.card {
     width: auto;
     margin: 5px;
     box-shadow: 2px 2px;
+}
+.hidden {
+
 }
