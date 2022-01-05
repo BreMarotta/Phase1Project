@@ -19,7 +19,7 @@ function createPopCard(pop){
         <h2>${pop.name}</h2>
         <h4><span>${pop.fandom}</h4>
         <img src="${pop.image}" class="img"/>
-        <h5>From: ${pop.from}</h5>
+        <h5>From: ${pop.from} <br>${pop.occasion}</h5>
         `
     document.querySelector('#funko-pop-collection').appendChild(card)
 }
@@ -41,6 +41,7 @@ function addNew(e){
            "fandom": e.path[3].querySelector('#fandom-dropdown').value,
            "image": e.path[3].querySelector('#picture').value,
            "from": e.path[3].querySelector('#giver').value,
+           "occasion": e.path[4].querySelector('#occasion').value
         }),
     })
     .then(res => res.json())
@@ -48,6 +49,8 @@ function addNew(e){
     document.querySelector('form').reset();
 }
 const allPops = document.getElementsByClassName('card') 
+
+
 //WORKS!!!Attempting to create function to only display filtered cards for each fandom
 const btns =document.getElementsByClassName("fandomPics");
 for(const btn of btns){
