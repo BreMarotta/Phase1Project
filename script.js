@@ -32,7 +32,6 @@ function createPopCard(pop){
 const showFormBtn =document.querySelector('btn').addEventListener("click", showForm)
 
 function showForm(){
-    console.log("Got to function")
     const form =document.querySelector('form')
     form.style.display = "block";
 }
@@ -57,6 +56,7 @@ function addNew(e){
     })
     .then(res => res.json())
     .then(newPop => createPopCard(newPop))
+    document.querySelector('form').reset()
     document.querySelector('form').style.display = "none";
 }
 const allPops = document.getElementsByClassName('card');
