@@ -18,8 +18,8 @@ h4{
 }
 h5{
     font-family: Helvetica;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 10px;
+    display: none;
 }
 
 .container {
@@ -29,7 +29,7 @@ h5{
 form { /*Form to add a Funko Pop to Collection */
     border: 5px solid black;
     background: whitesmoke;
-    font-size: medium;
+    font-size: small;
     box-shadow: 5px 5px;
     float:right;
 }
@@ -64,8 +64,6 @@ img { /*Pictures for Collection Cards */
     height:250px;
     justify-self: center;
 }
-
-
 p {
     text-align: center;
 }
@@ -76,9 +74,9 @@ p.card {
     background: whitesmoke;
     text-align: center;
     border: grey solid 3px;
-    padding: 1rem;
+    padding: .5rem;
     display: inline-grid;
-    margin: 1rem 2rem;
+    margin: .5rem .5rem;
     box-shadow: 3px 4px black;
     width: 250px;
     height: 385px;
@@ -88,8 +86,4 @@ p.card {
     width: auto;
     margin: 5px;
     box-shadow: 2px 2px;
-}
-#hidden {
-    display: none;
-    
 }
