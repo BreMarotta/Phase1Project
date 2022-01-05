@@ -40,7 +40,7 @@ for(const btn of btns){
                 card.hidden= true;
                 //card.hidden = true;
             } else{
-                console.log("This should not be hidden", card)
+                console.log("This should not be hidden", fandom)
             }
         }
     })

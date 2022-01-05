@@ -89,6 +89,7 @@ p.card {
     margin: 5px;
     box-shadow: 2px 2px;
 }
-.hidden {
-
+#hidden {
+    display: none;
+    
 }
