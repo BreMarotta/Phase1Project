@@ -29,8 +29,13 @@ function createPopCard(pop){
         e.target.children[3].style.visibility = "hidden";
     })
 }
+const showFormBtn =document.querySelector('btn').addEventListener("click", showForm)
 
-
+function showForm(){
+    console.log("Got to function")
+    const form =document.querySelector('form')
+    form.style.display = "block";
+}
 //WORKS Submits form to add new Funko Pop to collection
 const formSubmit =document.querySelector("button").addEventListener("click", addNew)
 //WORKS! Function to add new Funko Pop to the collect (posts to db.json and creates new card)
@@ -52,16 +57,11 @@ function addNew(e){
     })
     .then(res => res.json())
     .then(newPop => createPopCard(newPop))
-    document.querySelector('form').reset();
+    document.querySelector('form').style.display = "none";
 }
 const allPops = document.getElementsByClassName('card');
 
 
-
-//console.log(displayCards)
-function foo(){
-    console.log("got to function")
-}
 
 
 //WORKS!!!Attempting to create function to only display filtered cards for each fandom
