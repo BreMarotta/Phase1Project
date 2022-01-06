@@ -1,40 +1,44 @@
+h1, h2, h3, h4{
+    font-family: Helvetica;
+}
 h1 {
     font-size: 65px;
-    font-family: Helvetica;
     font-weight: bolder;
     text-align: center;
 }
 h2{
-    font-family: Helvetica;
     font-weight: bolder;
     font-size: 25px;
     height:0px;
 }
 h3{
-    font-family: Helvetica;
     font-weight: bold;
     font-size: 20px;
     height: 0px;
 }
 h4{
-    font-family: Helvetica;
     font-size: 10px;
     font-weight:lighter;
     visibility: hidden;
 }
-form { /*Form to add a Funko Pop to Collection */
+from, button, btn, .logo, .fandomPics, p.card{
+    box-shadow: 2px 2px black;
     border: grey solid 2px;
+}
+form {
     background: whitesmoke;
     font-size: small;
-    box-shadow: 5px 5px;
     width: 500px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    margin: auto;
     display:none;
 }
 select, label, input {
     width: 350px;
 }
 
-button, btn { /*buttons to submit form and add new*/
+button, btn { 
     text-align: center;
     font-size: 12px;
     font-weight:lighter;
@@ -42,22 +46,18 @@ button, btn { /*buttons to submit form and add new*/
     color: whitesmoke;
     padding: 8px 5px;
     background: rgb(19, 37, 39);
-    border: grey solid 1px;
-    box-shadow: 2px 2px black;
 }
 
-.logo { /*Funko Pop Logo. Also Reset Collection Button */
-    border: grey solid 2px;
+.logo {
     width: 500px;
     height: auto;
     margin: auto;
-    box-shadow: 5px 5px;
 }
 body {
     background: rgb(106, 159, 172);
     
 }
-img { /*Pictures for Collection Cards */
+img { 
     background: white;
     width: auto;
     height:250px;
@@ -72,19 +72,15 @@ p {
 p.card {
     background: whitesmoke;
     text-align: center;
-    border: grey solid 2px;
     padding: .5rem;
     display: inline-grid;
     margin: .5rem .5rem;
-    box-shadow: 3px 4px black;
     width: 250px;
     height: 385px;
 }
 .fandomPics { /* Fandom Logos at the top of the page. Also buttons*/
-    border: grey solid 2px;
     height: 50px;
     width: auto;
     margin: 5px;
-    box-shadow: 2px 2px;
     background: white;
 }
