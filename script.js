@@ -10,7 +10,7 @@ function init(){
     })
 }
 
-//Functions:
+
 // Function to create card and add eventListeners to play hide and seek with from and occasion info
 function createPopCard(pop){
     let card =document.createElement('p')
@@ -21,7 +21,8 @@ function createPopCard(pop){
         <img src="${pop.image}" class="img"/>
         <h4>From:   ${pop.from} <br>${pop.occasion}</h4>
         `
-    document.querySelector('#funko-pop-collection').appendChild(card)
+        document.querySelector('#funko-pop-collection').appendChild(card)
+    
     card.addEventListener("mouseenter", (e) => {
         e.target.children[3].style.visibility = "visible"; 
     })
@@ -29,15 +30,16 @@ function createPopCard(pop){
         e.target.children[3].style.visibility = "hidden";
     })
 }
-const showFormBtn =document.querySelector('btn').addEventListener("click", showForm)
 
-function showForm(){
+
+//Form to add new Pop to collection. Form hides when not needed. Fetch posts new Pop to db.json
+const showFormBtn =document.querySelector('btn').addEventListener("click", () =>{
     const form =document.querySelector('form')
     form.style.display = "block";
-}
-//WORKS Submits form to add new Funko Pop to collection
+})
+
 const formSubmit =document.querySelector("button").addEventListener("click", addNew)
-//WORKS! Function to add new Funko Pop to the collect (posts to db.json and creates new card)
+
 function addNew(e){
     e.preventDefault()
     fetch(`http://localhost:3000/funkoPops`, {
@@ -59,12 +61,11 @@ function addNew(e){
     document.querySelector('form').reset()
     document.querySelector('form').style.display = "none";
 }
+
+
+//Filter Pops by fandom and a button to reset and display full collection
 const allPops = document.getElementsByClassName('card');
 
-
-
-
-//WORKS!!!Attempting to create function to only display filtered cards for each fandom
 const btns =document.getElementsByClassName("fandomPics");
 for(const btn of btns){
     btn.addEventListener("click", (e) => {
@@ -77,6 +78,8 @@ for(const btn of btns){
         } 
     })
 }
+
+
 //Reset Button: Will reset collection to include all cards
 const resetButton =document.querySelector("img.logo").addEventListener("click", () => {
     for(const card of allPops){
