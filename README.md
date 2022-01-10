@@ -37,3 +37,6 @@ The bare bones of this code can be changed to create an online inventory with re
 
 ## Full Walk Through Video
 https://youtu.be/JCe8D964kjI
+
+## Sources
+All Logos and images used in this project are used in a comparitve manner to sort a full collection. This webpage is an educational project and the author claims no partnership or ownership with any entity represented by the Logos or images.  
